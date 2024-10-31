@@ -6,7 +6,7 @@
 /*   By: sojammal <sojammal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 11:37:21 by sojammal          #+#    #+#             */
-/*   Updated: 2024/10/31 18:15:21 by sojammal         ###   ########.fr       */
+/*   Updated: 2024/10/31 22:34:09 by sojammal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
+# include <limits.h>
+# include <string.h> 
 
 /* Mandatory Functions */
 
@@ -44,4 +46,6 @@ int     ft_memcmp(const void *s1, const void *s2, size_t n);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 int     ft_tolower(int c);
 int     ft_toupper(int c);
+int     ft_atoi(const char *str);
+void    *ft_calloc(size_t count, size_t size);
 #endif // LIBFT_H!
