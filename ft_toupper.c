@@ -1,25 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sojammal <sojammal@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: sojammal <sojammal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/25 18:58:31 by sojammal          #+#    #+#             */
-/*   Updated: 2024/10/25 19:00:00 by sojammal         ###   ########.fr       */
+/*   Created: 2024/10/30 23:13:49 by sojammal          #+#    #+#             */
+/*   Updated: 2024/10/30 23:17:37 by sojammal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(int c)
+int	ft_toupper(int c)
 {
-	return (c >= 0 && 127 >= c);
+	if (c >= 97 && c <= 122)
+	{
+		return (c - 32);
+	}
+	return (c);
 }
-/*
-int main()
-{
-    char test_ascii = 'a';
-    int result = ft_isascii(test_ascii);
-    printf("%d\n", result);
-}*/

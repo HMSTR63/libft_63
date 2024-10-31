@@ -1,44 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sojammal <sojammal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/28 12:03:36 by sojammal          #+#    #+#             */
-/*   Updated: 2024/10/31 18:14:24 by sojammal         ###   ########.fr       */
+/*   Created: 2024/10/31 13:14:15 by sojammal          #+#    #+#             */
+/*   Updated: 2024/10/31 13:19:36 by sojammal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    *ft_memset(void *b, int c, size_t len)
+char *ft_strrchr(const char *s, int c)
 {
-	unsigned char *tmp;
-	size_t i;
-
-	tmp = (unsigned char *) b;
-	i = 0;
-
-	while (i < len)
-	{
-		tmp[i] = (unsigned char) c;
-		// tmp++;
-		i++;
-	}
-	return (b);
+   unsigned int i;
+   char         u_c;
+   char         *result;
+   
+   i = 0;
+   u_c = (char)c;
+   result = NULL; 
+   while (s[i])
+   {
+        if (s[i] == u_c)
+        {
+            result = (char *) &s[i];
+        }
+        i++;
+   }
+   return (result);
 }
 
-// #include <limits.h>
-
+// #include <string.h>
 // int main()
 // {
-// 	int c = INT_MAX;
-// 	ft_memset(&c, 0, 4);
-// 	ft_memset(&c, 5, 2);
-// 	ft_memset(&c, 57, 1);
-// 	ft_memset(&c, 255, 4);
-// 	ft_memset(&c, 250, 2);
-// 	ft_memset(&c, 199, 1);
-// 	printf("%d\n", c);
+//     char s[] = "HMSTR";
+//     printf("{%s}\n", strrchr(s, 'H'));
 // }

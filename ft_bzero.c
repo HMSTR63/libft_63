@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sojammal <sojammal@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/25 18:58:31 by sojammal          #+#    #+#             */
-/*   Updated: 2024/10/25 19:00:00 by sojammal         ###   ########.fr       */
+/*   Created: 2024/10/30 10:13:25 by sojammal          #+#    #+#             */
+/*   Updated: 2024/10/30 10:23:03 by sojammal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(int c)
+void    ft_bzero(void *s, size_t n)
 {
-	return (c >= 0 && 127 >= c);
+	unsigned char *tp;
+
+	tp = (unsigned char *)s;
+	while (n > 0)
+	{
+		*tp = 0;
+		tp++;
+		n--;
+	}
 }
-/*
-int main()
-{
-    char test_ascii = 'a';
-    int result = ft_isascii(test_ascii);
-    printf("%d\n", result);
-}*/
