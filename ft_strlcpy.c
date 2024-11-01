@@ -6,7 +6,7 @@
 /*   By: sojammal <sojammal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/30 18:41:14 by sojammal          #+#    #+#             */
-/*   Updated: 2024/10/30 22:26:02 by sojammal         ###   ########.fr       */
+/*   Updated: 2024/11/01 12:25:10 by sojammal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,15 +31,15 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	return (srcl);
 }
 
-#include <string.h>
+// #include <string.h>
 
-int main()
-{
-    char src[] = "";
-    char dst[] = "";
-    size_t dstsize = sizeof(dst);
+// int main()
+// {
+//     char src[] = "";
+//     char dst[] = "";
+//     size_t dstsize = sizeof(dst);
 
-    int res = strlcpy(dst, src, dstsize);
-    printf("{%d}\n", res);
-    printf("{%s}\n", dst);
-}
+//     int res = strlcpy(dst, src, dstsize);
+//     printf("{%d}\n", res);
+//     printf("{%s}\n", dst);
+// }
