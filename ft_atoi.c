@@ -6,7 +6,7 @@
 /*   By: sojammal <sojammal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/31 21:03:11 by sojammal          #+#    #+#             */
-/*   Updated: 2024/11/01 17:24:27 by sojammal         ###   ########.fr       */
+/*   Updated: 2024/11/01 17:31:06 by sojammal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ int	ft_atoi(const char *str)
 {
 	long	res;
 	long	stor;
-	int	i;
-	int	sign;
+	int		i;
+	int		sign;
 
 	res = 0;
 	i = 0;
