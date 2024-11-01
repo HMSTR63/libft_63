@@ -6,7 +6,7 @@
 /*   By: sojammal <sojammal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 11:37:21 by sojammal          #+#    #+#             */
-/*   Updated: 2024/11/01 12:39:21 by sojammal         ###   ########.fr       */
+/*   Updated: 2024/11/01 12:51:52 by sojammal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,4 +48,6 @@ int     ft_tolower(int c);
 int     ft_toupper(int c);
 int     ft_atoi(const char *str);
 void    *ft_calloc(size_t count, size_t size);
+char    *ft_strdup(const char *s1);
+
 #endif // LIBFT_H!
